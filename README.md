@@ -1,6 +1,6 @@
 # JBWeather
 ## 🌦️ Summary
-JBWeather is a full‑stack weather forecasting application that allows users to look up the current and upcoming weather conditions for cities around the world. The app integrates with the OpenWeatherMap third‑party API to fetch real‑time weather data, including a 7‑day forecast for any selected location.
+JBWeather is a weather forecasting application that allows users to look up the current and upcoming weather conditions for cities around the world. The app integrates with the OpenWeatherMap third‑party API to fetch real‑time weather data, including a 7‑day forecast for any selected location.
 
 The project is built using Node.js on the backend and React + Vite on the frontend, providing a fast, modern, and responsive user experience.
 
