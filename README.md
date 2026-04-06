@@ -1,6 +1,6 @@
 # JBWeather
 ## 🌦️ Summary
-JBWeather is a weather forecasting application that allows users to look up the current and upcoming weather conditions for cities around the world. The app integrates with the OpenWeatherMap third‑party API to fetch real‑time weather data, including a 7‑day forecast for any selected location.
+JBWeather is a weather forecasting application that allows users to look up the current and upcoming weather conditions for cities around the world. The app integrates with the OpenWeatherMap third‑party API to fetch real‑time weather data, including a 5‑day forecast for any selected location.
 
 The project is built using Node.js on the backend and React + Vite on the frontend, providing a fast, modern, and responsive user experience.
 
@@ -9,7 +9,7 @@ The project is built using Node.js on the backend and React + Vite on the fronte
 
 - View current weather conditions (temperature, humidity, wind, etc.)
 
-- Display a full 7‑day forecast
+- Display a full 5‑day forecast
 
 - Clean, responsive UI built with React + Vite
 
@@ -17,12 +17,14 @@ The project is built using Node.js on the backend and React + Vite on the fronte
 
 - Error handling for invalid cities, network issues, or missing data
 
+- Light/Dark mode Toggle
+
 ## 🛠️ Tech Stack
 | Layer | Technology |
 | --- | --- |
 | Frontend | React, Vite |
 | Backend |	Node.js |
-| API |	OpenWeatherMap (One Call API or Forecast API) |
+| API |	OpenWeatherMap |
 
 ## 🔌 How It Works
 1. The user enters a city name in the search bar.
@@ -42,27 +44,14 @@ The project is built using Node.js on the backend and React + Vite on the fronte
 git clone https://github.com/jasonbatingan1-cmd/WeatherApp
 ```
 
-### Install backend dependencies
+### Install dependencies
 ```
-cd server
-npm install
-```
-
-### Install frontend dependencies
-```
-cd ../client
+cd JBWeather
 npm install
 ```
 
 ## ▶️ Running the App
-### Backend
 ```
-cd server
-npm run dev
-```
-### Frontend
-```
-cd client
 npm run dev
 ```
 
@@ -70,21 +59,6 @@ npm run dev
 Create a .env file in your backend directory:
 ```
 OPENWEATHER_API_KEY=your_api_key_here
-PORT=3001
 ```
-
-## 📸 Screenshots (optional)
-Add UI screenshots here once your app is built.
-
-🧩 Future Enhancements
-Add geolocation support (auto‑detect user’s location)
-
-Add hourly forecast
-
-Add weather icons and animations
-
-Save favorite cities
-
-Dark mode
 
 <i>JBWeather created by Jason Batingan, 2026</i>
