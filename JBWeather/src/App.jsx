@@ -34,14 +34,16 @@ export default function App() {
       </Typography>
 
       <Typography variant="subtitle1" sx={{ mb: 3, textAlign: "center", color: "text.secondary" }}>
-        Type in a city name or use your location to get the current weather and 5-day forecast.
+        Type in a city name or use your location to get the current weather and 5-day forecast. 
+        Click the city name or press 'Enter' to search. If using location, allow the browser to access your location when prompted.
+        Click the 'Clear' button to reset and start a new search.
       </Typography>
 
       <SearchBar onSelectCity={handleCitySelect} />
 
       <Button 
         onClick={handleUseLocation} 
-        variant="contained" 
+        variant="outlined" 
         color="primary"
         sx={{ mt: 2 }}
       >
@@ -50,7 +52,7 @@ export default function App() {
 
       <Button
         variant="outlined"
-        color="secondary"
+        color="error"
         onClick={clear}
         sx={{ mt: 2 }}
       >
@@ -61,6 +63,11 @@ export default function App() {
 
       <WeatherCard weather={weather} />
       <ForecastList forecast={forecast} />
+
+      <Typography variant="body2" sx={{ mt: 4, textAlign: "center", color: "text.secondary", fontStyle: "italic" }}>
+        Data provided by OpenWeatherMap. Built by Jason Batingan, 2026.
+      </Typography>
     </Container>
+    
   );
 }
