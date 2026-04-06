@@ -1,10 +1,28 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import ThemeWrapper from "./theme/ThemeWrapper";
+import { CssBaseline, useTheme } from "@mui/material";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+function ThemedApp() {
+  const theme = useTheme();
+
+  return (
+    <div
+      style={{
+        background: theme.palette.background.default,
+        minHeight: "100dvh",
+        transition: "background 0.3s ease",
+      }}
+    >
+      <App />
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <ThemeWrapper>
+    <CssBaseline />
+    <ThemedApp />
+  </ThemeWrapper>
+);
